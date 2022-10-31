@@ -11,10 +11,13 @@ public class Main {
         ArrayList<Talkable> zoo = new ArrayList<>();
 
         // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
+//        zoo.add(new Dog(true, "Bean"));
+//        zoo.add(new Cat(9, "Charlie"));
+//        zoo.add(new Teacher(44, "Stacy Read"));
         // End Lines to Replace
+        Animal animal = new Animal();
+        zoo.add(animal.getInput());
+
 
         for (Talkable thing : zoo) {
             printOut(thing);
